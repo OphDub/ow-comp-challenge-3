@@ -17,11 +17,6 @@ Liberties were granted with the copy, images, icons, and color palette (provided
 * Push final work to github pages
 
 
-## Additional Requirements
-
-* Site must work across Firefox, Safari, Chrome
-
-* Developer must use normalize instead of reset file in CSS
 
 ## Original Comp Example
 
