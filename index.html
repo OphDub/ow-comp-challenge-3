@@ -1,10 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Static Comp Challenge 3</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
+	<nav class="side-nav">
+		<article class="user-profile">
+			<img src="" alt="user profile picture">
+		</article>
+		<article class="nav-sub">
+			<h3 class="nav-sub-main-header">Main</h3>
+			<ul class="nav-sub">
+				<li class="nav-sub-li">Home</li>
+				<li class="nav-sub-li">Jobs</li>
+				<li class="nav-sub-li">Resumes</li>
+				<li class="nav-sub-li">Tasks</li>
+				<li class="nav-sub-li">Calendar</li>
+			</ul>
+		</article>
+		<article class="nav-sub">
+			<h3 class="nav-sub-admin-header">Admin</h3>
+			<ul class="nav-sub">
+				<li class="nav-sub-li">Users</li>
+				<li class="nav-sub-li">Locations</li>
+				<li class="nav-sub-li">Workflows</li>
+				<li class="nav-sub-li">Job Boards</li>
+				<li class="nav-sub-li">Social</li>
+			</ul>
+		</article>
+		<article class="nav-sub">
+			<h3 class="nav-sub-categories-header">Categories</h3>
+			<ul class="nav-sub">
+				<li class="nav-sub-li">Administrative</li>
+				<li class="nav-sub-li">Design</li>
+				<li class="nav-sub-li">Executive</li>
+				<li class="nav-sub-li">Human Resources</li>
+			</ul>
+		</article>
+	</nav>
+	<header>
+		<nav class="main-nav">
+		<button class="main-nav-btn side-nav-reveal"></button>
+		<input type="text" placeholder="Search for job, task, or resume">
+		<section class="main-nav-btn-set">
+			<button class="main-nav-btn"></button>
+			<button class="main-nav-btn"></button>
+			<button class="main-nav-btn"></button>
+		</section>
+		</nav>	
+	</header>
+	<main>
+		<section class="post-header">
+			<h2 class="post-header-job-name">Customer Service Representative</h2>
+			<h3 class="post-header-location">San Francisco, CA</h3> <a href="#">Preview this post</a>
+			<div>
+				<button class="post-head-btn">Open</button>
+				<button class="post-head-btn"></button>
+				<button class="post-head-btn"></button>
+				<button class="post-head-btn"></button>
+			</div>
+			<div>
+				<ul class="post-head-menu">Summary</ul>
+				<ul class="post-head-menu">Applicants</ul>
+				<ul class="post-head-menu">Job Board</ul>
+				<ul class="post-head-menu">Interviews</ul>
+				<ul class="post-head-menu">Activity</ul>
+				<ul class="post-head-menu">Broadcast</ul>
+				<ul class="post-head-menu">Notifications</ul>
+			</div>
+		</section>
+		<section class="stat-dropdown">
+			<article class="stat-circles">
+				<!-- Circles -->
+				<div class="stat-info">
+					<h4 class="stat-header">Totals - Out of 5,233 views</h4>	
+				</div>
+			</article>
+			<article class="stat-circles">
+				<!-- Graphs -->
+				<div class="stat-info">
+					<h4 class="stat-header">Applicants/Day</h4>
+				</div>
+			</article>
+		</section>
+		<section class="job-post-info">
+			<article class="job-card">
+				<div class="job-card-header">
+					<h2>Job Description</h2>
+					<button class="job-card-btn">Edit</button>	
+				</div>
+				<table class="job-table">
+					<tr class="tr-position">
+						<td class="job-td-header">Position Title</td>
+						<td class="job-tr-info">Customer Service Representative</td>
+					</tr>
+					<tr class="tr-location">
+						<td class="job-td-header">Location</td>
+						<td class="job-tr-info">San Francisco, CA</td>
+					</tr>
+					<tr class="tr-time">
+						<td class="job-td-header">Employment Time</td>
+						<td class="job-tr-info">Full-time</td>
+					</tr>
+					<tr class="tr-experience">
+						<td class="job-td-header">Experience</td>
+						<td class="job-tr-info">Mid-level</td>
+					</tr>
+					<tr class="tr-status">
+						<td class="job-td-header">Status</td>
+						<td class="job-tr-info">Open</td>
+					</tr>
+					<tr class="tr-description">
+						<td class="job-td-header">Description</td>
+						<td class="job-tr-info">Lorm</td>
+					</tr>
+					<tr class="tr-hiring-lead">
+						<td class="job-td-header">Hiring Lead</td>
+						<td class="job-tr-info"></td>
+					</tr>
+					<tr class="tr-approved-salary">
+						<td class="job-td-header">Approved Salary</td>
+						<td class="job-tr-info"></td>
+					</tr>
+				</table>
+			</article>
+			<article class="job-post">
+				<div class="job-post-methods">
+					<button class="job-post-social-btn">Post to Facebook</button>
+					<button class="job-post-social-btn">Tweet this Job</button>
+					<button class="job-post-social-btn">Post to LinkedIn</button>
+				</div>
+				<div class="job-post-methods">
+					<h2>Link to this Job</h2>
+					<p>lorem</p>
+					<input type="text">
+					<button class="job-post-btn">Copy</button>
+				</div>
+				<div class="job-post-methods">
+					<h2>Use the Button Widget</h2>
+					<p>lorem</p>
+					<input type="text">
+					<button class="job-post-btn">Copy</button>
+				</div>
+				<div class="job-post-methods">
+					<h2>Upload Resumes by Email</h2>
+					<p>lorem</p>
+					<input type="text">
+				</div>
+			</article>
+		</section>
+	</main>
 </body>
 </html>
