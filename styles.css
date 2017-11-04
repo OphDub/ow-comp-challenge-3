@@ -1,0 +1,52 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: row;
+}
+
+main {
+	flex-grow: 2;
+}
+
+.side-nav {
+	border: magenta 1px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #374050;
+	color: #AAB3C3;
+}
+
+.nav-sub ul {
+	list-style-type: none;
+}
+
+figcaption {
+	display: inline;
+}
+
+.user-profile-pic {
+	width: 100px;
+	height: 100px;
+	background: url("https://ewedit.files.wordpress.com/2017/06/dj-khaled.jpg?w=2000");
+	background-size: cover;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+ 	-moz-border-radius: 100px;
+}
+
+.post-header {
+	border: magenta 1px solid;
+}
+
+.stat-dropdown {
+	border: magenta 1px solid;
+}
+
+.job-post-info {
+	border: magenta 1px solid;
+}
+
+.job-post {
+	border: magenta 1px solid;
+}
