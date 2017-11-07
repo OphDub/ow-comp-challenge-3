@@ -53,6 +53,7 @@ h2,h3,ul {
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
  	-moz-border-radius: 100px;
+ 	display: flex;
 }
 
 .user-menu {
@@ -61,17 +62,22 @@ h2,h3,ul {
 	align-items: center;
 }
 
+.user-menu:hover {
+	color: #FFFFFF;
+}
+
 .nav-sub {
 	display: flex;
 	flex-direction: column;
 	border-bottom: #273040 2px solid;
 	text-transform: uppercase;
+	padding-bottom: 15px;
 }
 
 .nav-sub-header {
 	font-size: 15px;
 	font-weight: 400;
-	padding: 20px 15px 10px 15px;
+	padding: 20px 15px 10px;
 	color: #6e7d93;
 	text-transform: capitalize;
 }
@@ -87,27 +93,52 @@ h2,h3,ul {
 .nav-sub-li:hover {
 	background-color: #2A3241;
 	color: #FFFFFF;
-	border-left: #13A4F7 3px solid;
+	border-left: #13A4F7 2px solid;
 }
 
-.cat-admin {
+.nav-sub-icons {
+	margin-left: 15px;
+}
+
+.nav-sub-text {
+	margin-left: 10px;
+}
+
+.admin {
 	color: #F4E806;
 }
 
-.cat-design {
+.admin:hover {
+	color: #F4E806;
+}
+
+.design {
 	color: #24A4FF;
 }
 
-.cat-exec {
+.design:hover {
+	color: #24A4FF;
+}
+
+.exec {
 	color: #E51956;
 }
 
-.cat-hr {
+.exec:hover {
+	color: #E51956;
+}
+
+.hr {
+	color: #01A47E;
+}
+
+.hr:hover {
 	color: #01A47E;
 }
 
 .cat-text {
 	color: #AAB3C3;
+	text-transform: capitalize;
 }
 
 /*Main Nav Styling*/
@@ -151,6 +182,10 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.post-head-btn {
+	background-color: transparent;
 }
 
 .post-menu {
