@@ -14,6 +14,7 @@ figure {
 
 figcaption {
 	font-family: 'Roboto', sans-serif;
+	display: inline;
 }
 
 h2,h3,ul {
@@ -22,7 +23,6 @@ h2,h3,ul {
 
 /*Side Nav Bar Styling*/
 .side-nav {
-	border: magenta 1px solid;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -30,18 +30,17 @@ h2,h3,ul {
 	color: #AAB3C3;
 }
 
-.nav-sub ul {
-	list-style-type: none;
-}
-
-figcaption {
-	display: inline;
-}
-
 .user-profile {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 15px;
+	border-bottom: #273040 2px solid;
+}
+
+.user-name {
+	font-size: 15px;
+	font-weight: 400;
 	padding: 15px;
 }
 
@@ -62,14 +61,33 @@ figcaption {
 	align-items: center;
 }
 
-.nav-sub-header {
-
-}
-
 .nav-sub {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	border-bottom: #273040 2px solid;
+	text-transform: uppercase;
+}
+
+.nav-sub-header {
+	font-size: 15px;
+	font-weight: 400;
+	padding: 20px 15px 10px 15px;
+	color: #6e7d93;
+	text-transform: capitalize;
+}
+
+.nav-sub-list {
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+}
+
+.nav-sub-li:hover {
+	background-color: #2A3241;
+	color: #FFFFFF;
+	border-left: #13A4F7 3px solid;
 }
 
 .cat-admin {
@@ -88,7 +106,7 @@ figcaption {
 	color: #01A47E;
 }
 
-.nav-sub figcaption {
+.cat-text {
 	color: #AAB3C3;
 }
 
@@ -99,13 +117,23 @@ header {
 	justify-content: space-between;
 }
 
-.main-nav-search {
-	flex-grow: 1;
-}
-
 .main-nav {
 	justify-content: space-around;
+	display: flex;
 }
+
+.main-nav-btn {
+	padding: 15px;
+	background-color: transparent;
+	color: #8C9198;
+}
+
+.main-nav-search {
+	flex-grow: 1;
+	font-family: FontAwesome, sans-serif;
+	padding: 13px;
+}
+
 
 /*Post Header Styling*/
 .post-header {
@@ -130,13 +158,98 @@ header {
 	flex-direction: row;
 }
 
-/*Statistics Dropdown Styling*/
+/*Statistics General Styling*/
 .stat-dropdown {
 	border: magenta 1px solid;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #EAF0F5;
+	padding: 3em;
+}
+
+.stats {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Circular Progress Graph Styling*/
+.circle-container {
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+}
+
+.single-chart {
+  width: 200px;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #D5DFE9;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.aqua .circle {
+  stroke: #3EAFBA;
+}
+
+.circular-chart.blue .circle {
+  stroke: #149AF8;
+}
+
+.circular-chart.purple .circle {
+  stroke: #A15AA3;
+}
+
+.circle-number {
+  fill: #666;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+.detail {
+  fill: #666;
+  font-size: 0.2em;
+  text-anchor: middle;
+}
+
+/*Graph Styling*/
+.graphs {
+	background-image: url('https://d3vvnhml5anv1n.cloudfront.net/content/uploads/2016/03/DJ-Khaled-Key-Emoji-SXSW-2016.png');
+	background-size: cover;
+	height: 200px;
+	width: 400px;
+}
+
+.stat-chevron {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 5px;
 }
 
 /*Job Description Styling*/
