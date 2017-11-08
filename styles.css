@@ -4,12 +4,12 @@
 /*Side Nav: ------------------- Line 39  */
 /*Main Nav: ------------------- Line 163 */
 /*Post Header: ---------------- Line 192 */
-/*Statistics General: --------- Line 269 */
-/*Circular Progress Graphs: --- Line  */
-/*Line Graph: ----------------- Line  */
-/*Job Description: ------------ Line  */
-/*Side Bar: ------------------- Line  */
-
+/*Statistics General: --------- Line 291 */
+/*Circular Progress Graphs: --- Line 340 */
+/*Line Graph: ----------------- Line 400 */
+/*Job Description: ------------ Line 409 */
+/*Side Bar: ------------------- Line 515 */
+/*Media Queries --------------- Line 615 */
 /*========================================*/
 
 /*Global Styling*/
@@ -345,8 +345,8 @@ header {
 }
 
 .single-chart {
-  width: 200px;
-  padding-right: 30px;
+  width: 165px;
+  padding-right: 10px;
 }
 
 .circular-chart {
@@ -399,8 +399,9 @@ header {
 
 /*Line Graph Styling*/
 .graphs {
-	background-image: url('https://www.daimanuel.com/wp-content/uploads/2015/01/Google-Analytics-CrossFit-Bodybuilding.png');
-	background-size: cover;
+	background-image: url('http://www.crossfitnaples.com/wp-content/uploads/2012/03/trend.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
 	height: 200px;
 	width: 400px;
 }
@@ -479,7 +480,7 @@ header {
 }
 
 .card-column-detail {
-	width: 400px;
+	width: 80%;
 }
 
 .description-info {
@@ -517,7 +518,7 @@ header {
 	flex-direction: column;
 	background-color: transparent;
 	padding: 50px 30px;
-	width: 30%;
+	width: 20%;
 }
 
 .job-post-methods {
@@ -546,6 +547,7 @@ header {
 .method-header {
 	display: flex;
 	flex-direction: row;
+	font-size: 18px;
 }
 
 .method-header figure {
@@ -598,7 +600,7 @@ header {
 .link-method,
 .widget-method,
 .email-method {
-	padding-top: 26px;
+	padding: 5px 0;
 }
 
 .post-link,
@@ -610,3 +612,69 @@ header {
 	max-height: 30px;
 }
 
+@media (max-width: 1200px) {
+	.stat-dropdown {
+		flex-direction: column;
+	}
+
+	.stats {
+		padding: 10px 0;
+	}
+
+	.method-header {
+		font-size: 15px;
+	}
+
+	.widget-method,
+	.link-method {
+		padding: 15px 0;
+	}
+
+	.card-column-header {
+		width: 27%;
+	}
+
+	.card-column-detail {
+		width: 70%;
+	}
+}
+
+@media (max-width: 960px) {
+	.job-post-info {
+		flex-direction: column;
+	}
+
+	.job-post {
+		width: 92%;
+		padding: 30px;
+	}
+
+	.post-link,
+	.widget-link {
+		width: 90%;
+	}
+
+	.job-description-card {
+		padding: 30px 30px 0 30px;
+	}
+
+	.post-menu {
+		max-width: 100%;
+	}
+
+	.post-menu-li {
+		flex-wrap: wrap;
+		padding: 15px 5px;
+	}
+}
+
+@media (max-width: 320px) {
+	.side-nav {
+		display: none;
+	}
+	
+	.circle-container {
+		flex-direction: column;
+	}
+
+}
