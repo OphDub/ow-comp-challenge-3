@@ -392,8 +392,9 @@ header {
 
 .detail {
   fill: #666;
-  font-size: 0.2em;
+  font-size: 0.175em;
   text-anchor: middle;
+  text-transform: uppercase;
 }
 
 /*Line Graph Styling*/
@@ -419,8 +420,6 @@ header {
 
 .job-card {
 	background-color: #FFFFFF;
-  grid-column: 2/ span 3;
-  grid-row: 5/span 8;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -434,7 +433,7 @@ header {
 	align-self: center;
 	background-color: #64738A;
 	color: #FFFFFF;
-	padding: 15px 0;
+	padding: 20px 0;
 }
 
 .job-header {
@@ -449,7 +448,7 @@ header {
 	background-color: #73819D;
 	color: #FFFFFF;
 	border: none;
-	padding: 5px;
+	padding: 10px;
 	font-size: 15px;
 	text-transform: uppercase;
 }
@@ -483,23 +482,74 @@ header {
 	width: 400px;
 }
 
+.description-info {
+	align-self: flex-start;
+	padding-top: 16px;
+}
+
+.hiring-lead-info {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+.hiring-lead-pic {
+	width: 50px;
+	height: 50px;
+	background-image: url('http://cdn5.thr.com/sites/default/files/2014/09/dj_khaled_pr_2013_p.jpg');
+	background-size: cover;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+ 	-moz-border-radius: 50px;
+}
+
+.hiring-lead-name {
+	padding-left: 15px;
+}
+
+.approved-salary {
+	border-bottom: 1px transparent;
+}
+
 /*Side Bar Styling*/
 .job-post {
-	border: magenta 1px solid;
 	display: flex;
 	flex-direction: column;
 	background-color: transparent;
+	padding: 50px 30px;
+	width: 30%;
 }
 
 .job-post-methods {
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
 }
 
 .job-post-social-btn {
 	color: #FFFFFF;
-	margin: 1em;
+	padding: 15px;
+	margin-bottom: 15px;
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: none;
+}
+
+.job-post-social-btn figure {
+	padding-left: 8px;
+}
+
+.job-post-social-btn span {
+	margin: auto;
+}
+
+.method-header {
+	display: flex;
+	flex-direction: row;
+}
+
+.method-header figure {
+	padding-right: 10px;
 }
 
 .facebook-btn {
@@ -514,13 +564,49 @@ header {
 	background-color: #0677B5;
 }
 
+.facebook-btn:hover,
+.twitter-btn:hover,
+.linkedin-btn:hover
+ {
+	background-color: #303846;
+	color: #FFFFFF;
+}
+
 .job-post-btn {
 	background-color: #40B1BA;
 	color: #FFFFFF;
 	border: none;
+	padding: 15px;
+}
+
+.job-post-btn:hover {
+	background-color: #59687F;
 }
 
 .job-links {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	white-space: nowrap;
 }
+
+.link-method,
+.widget-method {
+	border-bottom: #CFDAE6 2px solid  
+}
+
+.link-method,
+.widget-method,
+.email-method {
+	padding-top: 26px;
+}
+
+.post-link,
+.widget-link,
+.email-link {
+	background-color: #FFFFFF;
+	padding: 12px;
+	overflow-x: auto;
+	max-height: 30px;
+}
+
