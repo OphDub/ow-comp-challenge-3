@@ -412,29 +412,52 @@ header {
 	border-top: #CFDAE6 2px solid;
 }
 
+.job-description-card {
+	flex-grow: 2;
+	padding: 50px 30px;
+}
+
 .card-header {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	background-color: #64738A;
 	color: #FFFFFF;
+	padding: 15px;
+}
+
+.job-header {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 15px
 }
 
 .edit-job-btn {
 	background-color: #73819D;
 	color: #FFFFFF;
 	border: none;
+	padding: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 0 10px;
 }
 
-.job-description-card {
-	flex-grow: 2;
-	padding: 15px;
+.edit-job-btn figcaption {
+	margin-left: 8px;
+}
+
+.edit-job-btn:hover {
+	background-color: #FFFFFF;
+	color: #000000
 }
 
 .job-table {
 	border: magenta 1px solid;
 	background-color: #FFFFFF;
 	display: flex;
+	flex-direction: row;
 	align-items: stretch;
+	padding: 15px;
 }
 
 /*Side Bar Styling*/
@@ -448,7 +471,7 @@ header {
 .job-post-methods {
 	display: flex;
 	flex-direction: column;
-	padding: 3em 3em 3em 1.5em;
+	padding: 30px;
 }
 
 .job-post-social-btn {
