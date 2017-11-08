@@ -32,7 +32,7 @@ figcaption {
 	display: inline;
 }
 
-h2,h3,ul {
+h2,h3,h4,ul {
 	margin: 0px;
 }
 
@@ -294,7 +294,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #EAF0F5;
-	padding: 3em;
+	padding: 50px 30px;
 	border-top: #CFDAE6 2px solid;
 }
 
@@ -304,22 +304,52 @@ header {
 	align-items: center;
 }
 
+.stat-btn {
+	margin: 30px 0 10px;
+	background-color: #F8F8FA;
+	border-radius: 60px;
+  padding: 0.5em 0.6em;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.stat-btn-header {
+	text-transform: uppercase;
+}
+
+.stat-btn:hover {
+	background-color: #13A4F7;
+	color: #FFFFFF;
+}
+
+.stat-chevron {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0;	
+}
+
+.chevron-button {
+	border-radius: 60px;
+  padding: 0.5em 0.6em;
+  background-color: #E7EEF4;
+  font-size: 12px;
+}
+
 /*Circular Progress Graphs Styling*/
 .circle-container {
 	display: flex;
 	flex-direction: row;
-	align-content: space-around;
+	align-content: space-between;
 }
 
 .single-chart {
   width: 200px;
-  justify-content: space-around ;
+  padding-right: 30px;
 }
 
 .circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
   max-height: 250px;
 }
 
@@ -374,24 +404,6 @@ header {
 	width: 400px;
 }
 
-.stat-chevron {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 0;	
-}
-
-.stat-chevron:hover {
-	background-color: #FFFFFF;
-}
-
-.chevron-button {
-	border-radius: 60px;
-  padding: 0.5em 0.6em;
-  background-color: #E7EEF4;
-  font-size: 12px;
-}
-
 /*Job Description Styling*/
 .job-post-info {
 	display: flex;
@@ -400,7 +412,7 @@ header {
 	border-top: #CFDAE6 2px solid;
 }
 
-.job-card-header {
+.card-header {
 	display: flex;
 	flex-direction: row;
 	background-color: #64738A;
@@ -415,7 +427,7 @@ header {
 
 .job-description-card {
 	flex-grow: 2;
-	padding: 3em 1.5em 3em 3em;
+	padding: 15px;
 }
 
 .job-table {
