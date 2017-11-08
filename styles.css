@@ -378,16 +378,26 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0;
-	height: 5px;
+	height: 0;	
+}
+
+.stat-chevron:hover {
+	background-color: #FFFFFF;
+}
+
+.chevron-button {
+	border-radius: 60px;
+  padding: 0.5em 0.6em;
+  background-color: #E7EEF4;
+  font-size: 12px;
 }
 
 /*Job Description Styling*/
 .job-post-info {
-	border: magenta 1px solid;
 	display: flex;
 	flex-direction: row;
 	background-color: #EAF0F5;
+	border-top: #CFDAE6 2px solid;
 }
 
 .job-card-header {
