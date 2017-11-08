@@ -1,3 +1,18 @@
+/*Table of Contents*=======================/
+
+/*Global: --------------------- Line 15  */
+/*Side Nav: ------------------- Line 39  */
+/*Main Nav: ------------------- Line 163 */
+/*Post Header: ---------------- Line 192 */
+/*Statistics General: --------- Line 269 */
+/*Circular Progress Graphs: --- Line  */
+/*Line Graph: ----------------- Line  */
+/*Job Description: ------------ Line  */
+/*Side Bar: ------------------- Line  */
+
+/*========================================*/
+
+/*Global Styling*/
 body {
 	font-family: 'Roboto', sans-serif;
 	display: flex;
@@ -9,7 +24,7 @@ main {
 }
 
 figure {
-	margin: 8px;
+	margin: 0px;
 }
 
 figcaption {
@@ -28,6 +43,7 @@ h2,h3,ul {
 	justify-content: flex-start;
 	background-color: #374050;
 	color: #AAB3C3;
+	min-width: 180px;
 }
 
 .user-profile {
@@ -47,9 +63,8 @@ h2,h3,ul {
 .user-profile-pic {
 	width: 100px;
 	height: 100px;
-	background: url("https://ewedit.files.wordpress.com/2017/06/dj-khaled.jpg?w=2000");
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRalugiYd-h8xsjr70uPNheDhDO-ZNT80jWo2EiKvIrteOlA28arA");
 	background-size: cover;
-	background-position: 45%;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
  	-moz-border-radius: 100px;
@@ -90,6 +105,10 @@ h2,h3,ul {
 	padding: 0;
 }
 
+.nav-sub-li {
+	padding: 8px 0;
+}
+
 .nav-sub-li:hover {
 	background-color: #2A3241;
 	color: #FFFFFF;
@@ -97,7 +116,7 @@ h2,h3,ul {
 }
 
 .nav-sub-icons {
-	margin-left: 15px;
+	margin: 0 10px;
 }
 
 .nav-sub-text {
@@ -159,16 +178,24 @@ header {
 	color: #8C9198;
 }
 
+.main-nav-btn:hover {
+	background-color: #149AF9;
+	color: #FFFFFF;
+}
+
 .main-nav-search {
 	flex-grow: 1;
 	font-family: FontAwesome, sans-serif;
 	padding: 13px;
 }
 
-
 /*Post Header Styling*/
 .post-header {
-	border: magenta 1px solid;
+	padding: 15px 30px 0;
+}
+
+.post-header-job-name {
+	font-weight: 400;
 }
 
 .post-main-control {
@@ -182,34 +209,102 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin: 10px 0;
 }
 
-.post-head-btn {
-	background-color: transparent;
+.location-figcap {
+	margin: 0 8px;
+}
+
+.sep-dot {
+	font-size: 5px;
+	margin: 3px;
+}
+
+.post-preview-link {
+	margin-left: 5px;
+	text-decoration: none;
+	color: #84C7F6;
+}
+
+.post-preview-link:hover {
+	color: #149AF9;
+}
+
+.post-btn-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.post-btn-icon {
+	font-size: 12px;
+}
+
+.post-btn {
+  border-radius: 60px;
+  padding: 0.5em 0.6em;
+  color: #949AA7;
+  margin: 5px;
+}
+
+.post-indicator {
+	display: flex;
+}
+
+.post-indicator-dot {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #82C244;
+}
+
+.post-indicator-text {
+	margin-left: 5px;
+	font-size: 10px
+}
+
+.post-btn:hover {
+	background-color: #149AF9;
+	color: #FFFFFF;
 }
 
 .post-menu {
 	display: flex;
 	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+	max-width: 90%;
+	padding: 0;
+}
+
+.post-menu-li {
+	padding: 15px 0;
+	font-size: 15px;
+	border-bottom: transparent 2px solid;
+	text-transform: uppercase;
+}
+
+.post-menu-li:hover {
+	border-bottom: #13A4F7 2px solid;
+	font-weight: 800;
 }
 
 /*Statistics General Styling*/
 .stat-dropdown {
-	border: magenta 1px solid;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #EAF0F5;
 	padding: 3em;
+	border-top: #CFDAE6 2px solid;
 }
 
 .stats {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 
-/*Circular Progress Graph Styling*/
+/*Circular Progress Graphs Styling*/
 .circle-container {
 	display: flex;
 	flex-direction: row;
@@ -271,9 +366,9 @@ header {
   text-anchor: middle;
 }
 
-/*Graph Styling*/
+/*Line Graph Styling*/
 .graphs {
-	background-image: url('https://d3vvnhml5anv1n.cloudfront.net/content/uploads/2016/03/DJ-Khaled-Key-Emoji-SXSW-2016.png');
+	background-image: url('https://www.daimanuel.com/wp-content/uploads/2015/01/Google-Analytics-CrossFit-Bodybuilding.png');
 	background-size: cover;
 	height: 200px;
 	width: 400px;
