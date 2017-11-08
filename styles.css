@@ -417,19 +417,32 @@ header {
 	padding: 50px 30px;
 }
 
+.job-card {
+	background-color: #FFFFFF;
+  grid-column: 2/ span 3;
+  grid-row: 5/span 8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #A8B3C7 ;
+}
+
 .card-header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	align-self: center;
 	background-color: #64738A;
 	color: #FFFFFF;
-	padding: 15px;
+	padding: 15px 0;
 }
 
 .job-header {
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 15px
+	font-size: 15px;
+	width: 200px;
+	margin-left: 5%;
 }
 
 .edit-job-btn {
@@ -439,7 +452,6 @@ header {
 	padding: 5px;
 	font-size: 15px;
 	text-transform: uppercase;
-	margin: 0 10px;
 }
 
 .edit-job-btn figcaption {
@@ -451,13 +463,24 @@ header {
 	color: #000000
 }
 
-.job-table {
-	border: magenta 1px solid;
-	background-color: #FFFFFF;
-	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	padding: 15px;
+.card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #A8B3C7 ;
+  width: 90%;
+  min-height: 75px;
+  margin: 0 5%;
+}
+
+.card-column-header {
+	width: 200px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.card-column-detail {
+	width: 400px;
 }
 
 /*Side Bar Styling*/
