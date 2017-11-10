@@ -1,15 +1,15 @@
 /*Table of Contents*=======================/
 
 /*Global: --------------------- Line 15  */
-/*Side Nav: ------------------- Line 39  */
-/*Main Nav: ------------------- Line 163 */
-/*Post Header: ---------------- Line 192 */
-/*Statistics General: --------- Line 291 */
-/*Circular Progress Graphs: --- Line 340 */
-/*Line Graph: ----------------- Line 400 */
-/*Job Description: ------------ Line 409 */
-/*Side Bar: ------------------- Line 515 */
-/*Media Queries --------------- Line 615 */
+/*Side Nav: ------------------- Line 42  */
+/*Main Nav: ------------------- Line 172 */
+/*Post Header: ---------------- Line 207 */
+/*Statistics General: --------- Line 306 */
+/*Circular Progress Graphs: --- Line 355 */
+/*Line Graph: ----------------- Line 415 */
+/*Job Description: ------------ Line 431 */
+/*Side Bar: ------------------- Line 540 */
+/*Media Queries --------------- Line 649 */
 /*========================================*/
 
 /*Global Styling*/
@@ -646,6 +646,7 @@ header {
 	font-size: 15px;
 }
 
+/*Media Queries*/
 @media (max-width: 1175px) {
 	.post-menu {
 		max-width: 100%;
