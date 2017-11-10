@@ -24,7 +24,7 @@ Liberties were granted with the copy, images, icons, and color palette (provided
 
 ## Comp Challenge Image
 
-![Comp Challenge Sample Image](https://imgur.com/a/OVplS)
+![Comp Challenge Sample Image](https://imgur.com/gOaQyvv)
 
 ## Authors
 
