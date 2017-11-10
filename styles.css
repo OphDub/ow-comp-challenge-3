@@ -732,7 +732,31 @@ header {
 }
 
 @media (max-width: 400px) {	
+	main {
+		width: 100%;
+	}
+
+	.card-header {
+		padding: 20px;
+	}
+
 	.graphs {
 		min-width: 80%;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	.main-nav-search {
+		width: 100%;
+	}
+
+	.post-location-preview {
+		flex-direction: column;
+	}
+
+	.single-chart {
+		padding: 10px 0;
 	}
 }
